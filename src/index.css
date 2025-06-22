@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+@plugin "@tailwindcss/typography";
+@plugin 'tailwind-scrollbar';
+
+@theme inline {
+  --color-user-50: var(--color-blue-50);
+  --color-user-100: var(--color-blue-100);
+  --color-user-200: var(--color-blue-200);
+  --color-user-300: var(--color-blue-300);
+  --color-user-400: var(--color-blue-400);
+  --color-user-500: var(--color-blue-500);
+  --color-user-600: var(--color-blue-600);
+  --color-user-700: var(--color-blue-700);
+  --color-user-800: var(--color-blue-800);
+  --color-user-900: var(--color-blue-900);
+  --color-user-950: var(--color-blue-950);
+
+  --color-bot-50: var(--color-slate-50);
+  --color-bot-100: var(--color-slate-100);
+  --color-bot-200: var(--color-slate-200);
+  --color-bot-300: var(--color-slate-300);
+  --color-bot-400: var(--color-slate-400);
+  --color-bot-500: var(--color-slate-500);
+  --color-bot-600: var(--color-slate-600);
+  --color-bot-700: var(--color-slate-700);
+  --color-bot-800: var(--color-slate-800);
+  --color-bot-900: var(--color-slate-900);
+  --color-bot-950: var(--color-slate-950);
+}
+
+@utility scrollbar-hover {
+  @apply scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent hover:scrollbar-thumb-neutral-500 hover:scrollbar-track-neutral-100 max-h-full overflow-y-auto;
+}

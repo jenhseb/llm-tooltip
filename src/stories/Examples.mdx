@@ -1,0 +1,30 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs/blocks";
+import * as AskAboutActiveStories from "./AskAboutActive.stories";
+import * as AskAboutScreenStories from "./AskAboutScreen.stories";
+
+# Examples
+
+## Example 1: Ask About Any of the Items on the Screen
+
+Ask for help changing the background color to blue:
+
+<div className="m-auto flex flex-1 items-center justify-center border-1 border-b-neutral-400 p-1">
+  <img src="/stories/AskAboutScreen.gif" width="800" />
+</div>
+
+<br />
+### Try below:
+
+<Canvas of={AskAboutScreenStories.RealLLM} />
+
+## Example 2: Use it like a Tooltip
+
+### Ask about the item the user is hovering over.
+
+<div className="m-auto flex flex-1 items-center justify-center border-1 border-b-neutral-400 p-1">
+  <img src="/stories/AskAboutActive.gif" width="800" />
+</div>
+
+<br />
+#### Try below:
+<Canvas of={AskAboutActiveStories.RealLLM} />
